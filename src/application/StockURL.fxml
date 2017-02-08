@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.3294314381270903, 0.6806020066889632" layoutX="-1.0" layoutY="99.0" prefHeight="297.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="273.0" prefWidth="190.0">
+               <children>
+                  <Pane layoutX="-3.0" layoutY="-1.0" prefHeight="52.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="41.0" layoutY="19.0" text="Repertoire" />
+                        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="165.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/PlusPicto.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="131.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/MoinsPicto.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="-3.0" layoutY="52.0" prefHeight="243.0" prefWidth="200.0">
+                     <children>
+                        <ScrollBar layoutX="178.0" orientation="VERTICAL" prefHeight="243.0" prefWidth="17.0" />
+                        <ListView prefHeight="243.0" prefWidth="178.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane layoutX="-1.0" layoutY="1.0" prefHeight="52.0" prefWidth="202.0">
+                     <children>
+                        <Label layoutX="75.0" layoutY="19.0" text="URL" />
+                        <ImageView fitHeight="28.0" fitWidth="26.0" layoutX="169.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/PlusPicto.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="135.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/MoinsPicto.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="1.0" layoutY="52.0" prefHeight="243.0" prefWidth="200.0">
+                     <children>
+                        <ScrollBar layoutX="186.0" orientation="VERTICAL" prefHeight="243.0" prefWidth="17.0" />
+                        <ListView prefHeight="250.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="210.0" prefWidth="405.0">
+               <children>
+                  <Pane layoutY="2.0" prefHeight="52.0" prefWidth="187.0">
+                     <children>
+                        <Label layoutX="68.0" layoutY="19.0" text="Preview" />
+                        <ImageView fitHeight="26.0" fitWidth="42.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/pictoview.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="145.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/ZoomPicto.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="52.0" prefHeight="243.0" prefWidth="187.0">
+                     <children>
+                        <ScrollBar layoutX="165.0" orientation="VERTICAL" prefHeight="243.0" prefWidth="17.0" />
+                        <ListView prefHeight="250.0" prefWidth="166.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Pane layoutY="3.0" prefHeight="96.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="22.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/url.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="126.0" layoutY="14.0" text="StockURL" />
+            <Label layoutX="148.0" layoutY="40.0" prefHeight="15.0" prefWidth="225.0" text="&quot;Keep it small and simple&quot;" textFill="#aeabab">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="563.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/cross.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="528.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/pictohelp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>
