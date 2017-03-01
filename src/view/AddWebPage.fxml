@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddWebPageController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StockURLController">
    <children>
-      <Label layoutX="70.0" layoutY="28.0" prefHeight="15.0" prefWidth="125.0" text="Ajouter Page Web" />
-      <Button layoutX="280.0" layoutY="166.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Valider" />
-      <Button layoutX="519.0" layoutY="168.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="69.0" text="Annuler" />
-      <TextField layoutX="141.0" layoutY="76.0" prefHeight="25.0" prefWidth="300.0" promptText="https://google.com" />
-      <Label layoutX="70.0" layoutY="81.0" prefHeight="15.0" prefWidth="36.0" text="URL :" />
+      <Label layoutX="68.0" layoutY="28.0" prefHeight="16.0" prefWidth="139.0" text="Ajouter Repertoire">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="80.0" layoutY="85.0" text="Chemin : " />
+      <TextField fx:id="urlGetField" layoutX="142.0" layoutY="80.0" prefHeight="25.0" prefWidth="300.0" promptText="exemple : C:\DownloadFile" />
+	  <Button onMousePressed="#addRepParcourir" layoutX="450.0" layoutY="80" mnemonicParsing="false" text="Parcourir" />
+	  
+	  <Label layoutX="80.0" layoutY="120.0" text="Nom : " />
+	  <TextField fx:id="dirGetField" layoutX="142.0" layoutY="120.0" prefHeight="25.0" prefWidth="300.0" promptText="exemple : rep4" />
+	  
+      
+      <Button onMousePressed="#addUrlValiderClicked" layoutX="290.0" layoutY="161.0" mnemonicParsing="false" text="Valider" />
+      <Button layoutX="518.0" layoutY="164.0" mnemonicParsing="false" text="Annuler" />
    </children>
 </Pane>
